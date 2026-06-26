@@ -1,0 +1,17 @@
+# ServoControl.action
+# Reconstructed for the Nova5 mandarin picker simulation.
+#
+# This action is NOT part of Dobot's official ROS 2 packages — the client
+# (a898e4d9...py) imports `from dobot_interfaces.action import ServoControl`
+# and only ever uses Goal.action_name and Result.success / Result.message,
+# so this definition is reverse-engineered from that usage.
+
+# --- Goal ---
+string action_name        # e.g. "reach_target" (open gripper) / "reach_pre_point" (close)
+---
+# --- Result ---
+bool success
+string message
+---
+# --- Feedback ---
+float32 progress          # 0.0 .. 1.0 (unused by the client, kept for completeness)
